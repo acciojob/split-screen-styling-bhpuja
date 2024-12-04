@@ -1,1 +1,76 @@
-/*  your css code here. If applicable */
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+.navigation {
+  background-color: #D7E8D4;
+  width: 16.666%; /* 1/6th of the viewport width */
+  padding: 1em;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 1em 0;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Footer */
+.header, .footer {
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 1em;
+  flex: 0 0 20%; /* 1/5th of the viewport height */
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex: 1; /* Remaining height */
+  padding: 1em;
+}
+
+/* Article Section */
+.article {
+  flex: 3; /* 3/4th of the content width */
+  padding: 1em;
+  min-height: 60vh; /* Minimum height of 60% viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Aside Section */
+.aside {
+  flex: 1; /* 1/4th of the content width */
+  padding: 1em;
+  background-color: #e4e4e4;
+}
+
